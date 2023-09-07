@@ -3,8 +3,8 @@
 int main()
 {
 	int floor = 0;
-	printf("몇 층으로 쌓겠습니까?");
-	scanf_s("%d", &floor);
+	printf("몇 층으로 쌓겠습니까?\n");
+	scanf("%d", &floor);
 
 	for (int i = 0; i < floor; i++)
 	{
