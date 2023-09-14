@@ -2,7 +2,7 @@
 
 int main()
 {
-	int val_1, a, b;
+	int val_1, val_2, a, b;
 	
 	printf("a = 10, b = 15¿œ ∂ß\n");
 	
