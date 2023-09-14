@@ -4,7 +4,7 @@ int main()
 {
 	int js, mok;
 	
-	scanf("%d", js);
+	scanf("%d", &js);
 	
 	mok = js / 10;
 	
