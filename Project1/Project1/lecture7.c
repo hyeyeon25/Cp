@@ -4,7 +4,7 @@ int main()
 {
 	int js;
 	
-	scanf("%d", js);
+	scanf("%d", &js);
 	
 	if(js >= 90)
 	printf("A");
@@ -21,7 +21,7 @@ int main()
 	else if(js >= 50 && js <= 60)
 	printf("E");
 	
-	else(js > 100 || js < 0)
+	else if(js > 100 || js < 0)
 	printf("잘못 입력하였습니다.\n");
 	
 	return 0;
