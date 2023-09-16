@@ -5,7 +5,7 @@
 
 int main()
 {
-	int i, j;
+	int i, j
 	
 	for(i = 2; i <= 9; i++){
 		if(i == 5) continue;
