@@ -2,7 +2,7 @@
 
 int main()
 {
-	int i;
+	int i
 	int sum = 0;
 	int val = 1;
 	for(i = 0; i < 10; i++){
