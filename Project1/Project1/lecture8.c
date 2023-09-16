@@ -33,6 +33,4 @@ int main()
 		printf("F");
 		break;
 	}
-	
-	return 0;
 }
