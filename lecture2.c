@@ -6,7 +6,7 @@ int main()
 	char ch = 0;
 	char str[10];
 	
-	printf("1. 문자 입력: ");
+	printf("1. 문자 입력: ")
 	scanf("%c", &ch, sizeof(ch));
 	
 	printf("2. 문자열 입력: ");
