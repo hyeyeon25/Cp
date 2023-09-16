@@ -4,7 +4,7 @@ int main()
 {
 	int a;
 	
-	scanf("%d", &a);
+	scanf("%d", &a)
 	
 	if(a > 0)
 	printf("양의 정수입니다.\n");
