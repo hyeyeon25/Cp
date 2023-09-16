@@ -2,7 +2,7 @@
 
 int main()
 {
-	int js
+	int js;
 	
 	scanf("%d", &js);
 	
