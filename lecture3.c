@@ -4,7 +4,7 @@ int main()
 {
 	int val_1, a, b;
 	
-	printf("a = 10, b = 15일 때\n");
+	printf("a = 10, b = 15일 때\n")
 	
 	a = 10;
 	b = 15;
