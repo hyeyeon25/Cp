@@ -4,7 +4,7 @@ int main(void)
 {
 	int year;
 	printf("연도를 입력하세요. : ");
-	scanf("%d", &year);
+	scanf("%d", &year)
 	
 //	int y = (year % 100 != 0) && (year % 4 == 0) && (year % 400 != 0);
 //	if (y)
