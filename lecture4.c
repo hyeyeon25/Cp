@@ -7,7 +7,7 @@ int main()
 	
 	val1 = a && b;
 	val2 = a || c;
-	val3 = (a > b) && (a < c)
+	val3 = (a > b) && (a < c);
 	val4 = !val3;
 	val5 = b && c;
 	
