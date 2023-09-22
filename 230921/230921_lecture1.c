@@ -14,7 +14,7 @@ int isPrime(int num)
 int main()
 {
 	int num;
-	printf("¼Ò¼öÀÎÁö È®ÀÎÇÒ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä. :");
+	printf("ì†Œìˆ˜ì¸ì§€ í™•ì¸í•  ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. :");
 	scanf("%d", &num);
 	printf("%d\n", isPrime(num));
 }
