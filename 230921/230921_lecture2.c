@@ -31,14 +31,14 @@ int main()
 	int selector;
 	double num1, num2;
 	
-	printf("¼ıÀÚ 1À» ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("ìˆ«ì 1ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%lf", &num1);
 	
-	printf("¼ıÀÚ 2¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	printf("ìˆ«ì 2ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
 	scanf("%lf", &num2);
 	
 	
-	printf("1.´õÇÏ±â 2.»©±â 3.°öÇÏ±â 4.³ª´©±â : ");
+	printf("1.ë”í•˜ê¸° 2.ë¹¼ê¸° 3.ê³±í•˜ê¸° 4.ë‚˜ëˆ„ê¸° : ");
 	scanf("%d", &selector);
 	
 	calculator(selector, num1, num2);
@@ -51,7 +51,7 @@ void calculator(int selector, int num1, int num2)
 
 	if(selector < 1 || selector > 4)
 	{
-		printf("¿À·ù!!");
+		printf("ì˜¤ë¥˜!!");
 		return;
 	}
 	
