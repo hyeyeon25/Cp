@@ -21,7 +21,7 @@ int main() {
         if (i % 10000 == 0) {
             double pi = 4.0 * circle / (i + 1);
             double percent = (double)(i + 1) / points * 100.0;
-            printf("%.0f%% ÁøÇà.. ¿øÁÖÀ² : %f \n", percent, pi);
+            printf("%2.f%% ÁøÇà.. ¿øÁÖÀ² : %f \n", percent, pi);
             for (int k = 1; k <= 20; k++) {
                 if (k <= (percent * 100) / 500) {
                     printf("¡á");
@@ -36,9 +36,11 @@ int main() {
 
     double pi = 4.0 * circle / points;
     double percent = (double)points / points * 100.0;
-    printf("Â¿Ã¸ÃÃ–Ã€Â²: %f ", pi);
+    printf("ÃÖÁ¾ ¿øÁÖÀ²: %f ", pi);
 
     printf("\n");
 
     return 0;
 }
+
+//%(ÀüÃ¼ ÀÚ¸´¼ö).0(¼Ò¼öÁ¡ ÀÌÇÏ ¹ÌÇ¥½Ã)f(progress)%()%(Âğ ÆÛ¼¾Æ®)
