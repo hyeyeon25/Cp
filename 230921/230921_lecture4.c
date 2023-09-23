@@ -21,13 +21,13 @@ int main() {
         if (i % 10000 == 0) {
             double pi = 4.0 * circle / (i + 1);
             double percent = (double)(i + 1) / points * 100.0;
-            printf("%.0f%% ÃÃ¸Ã‡Ã .. Â¿Ã¸ÃÃ–Ã€Â² : %f \n", percent, pi);
+            printf("%.0f%% ÁøÇà.. ¿øÁÖÀ² : %f \n", percent, pi);
             for (int k = 1; k <= 20; k++) {
                 if (k <= (percent * 100) / 500) {
-                    printf("Â¡Ã¡");
+                    printf("¡á");
                 }
                 else 
-                    printf("Â¡Ã ");
+                    printf("¡à");
                 
             }
             printf("\n");
