@@ -11,5 +11,4 @@ int main()
 		printf("%d\n", score[cnt]);
 	}
 	return 0;
-}
-// int형 포인터라 4바이트씩 추가 
+} 
