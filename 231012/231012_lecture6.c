@@ -6,8 +6,8 @@ void swap(int* a, int* b) {
 	*b = c;
 }
 
-void sort(int arr[]) {
-	int i, j, t;
+void sort(int arr[], int size) {
+	int i, j;
 
 	for(i = 0; i < 4; i++) {	// 배열 수 - 1 만큼 반복
 		for (j = i + 1; j < 5; j++) {	// 최솟값 찾아서 
@@ -22,12 +22,13 @@ void sort(int arr[]) {
 int main()
 {
 	int arr[] = {4, 3, 2, 1, 5};
+	int size = 5;
 	
 	for(int i = 0; i < 5; i++)
 		printf("%d ", arr[i]);
 	printf("\n");
 	
-	sort(arr);
+	sort(arr, size);
 	
 	for(int j = 0; j < 5; j++)
 		printf("%d ", arr[j]);  
