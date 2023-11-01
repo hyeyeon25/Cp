@@ -8,7 +8,7 @@ int main() {
 
     srand(time(NULL));
 
-    for (int i = 0; i <= points; i++) {
+    for (int i = 1; i < points; i++) {
         double x = (double)rand() / RAND_MAX;
         double y = (double)rand() / RAND_MAX;
         
@@ -19,8 +19,8 @@ int main() {
     	}
 
     if (i % 10000000 == 0) {
-        double pi = 4.0 * circle / (i + 1);
-        double percent = (double)(i + 1) / points * 100.0;
+        double pi = 4.0 * circle / (i);
+        double percent = (double)(i) / points * 100.0;
         printf("%2.f%% 진행.. 원주율 : %f \n", percent, pi);
         for (int k = 1; k <= 20; k++) {
             if (k <= percent / 5) {
