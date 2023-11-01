@@ -19,16 +19,17 @@ int main() {
 
 
 
-   for (int i = 0;i < count;i++) {
+   for (int i = 0; i < count; i++) {
       
-      printf("학생 # %d-%d 성적 입력", count, i+1);
+      printf("학생 # %d - %d 성적 입력", count, i + 1);
       scanf("%d", score+i);
       sum += score[i];
    }
    printf("총점 : %d\n", sum);
 
-   for (int k = 0;k < count;k++) {
-      printf("학생 # %d-%d 성적 출력 : %d \n ", count, k+1,score[k]);
+   for (int k = 0; k < count; k++) {
+      printf("학생 # %d - %d 성적 출력 : %d \n ", count, k + 1, score[k]);
+      
 
 
    }
