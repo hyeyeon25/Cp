@@ -586,24 +586,24 @@ void chooseDifficulty() {
 	putsxy(32, 16, "게임 모드와 난이도를 선택해 주세요.");
 	putsxy(23, 18, "←→:모드 변경, ↑↓:난이도 변경, ENTER: 난이도 선택");
 	if (modeselect == 1) {
-		putsxy(37, 21, "◀  bigger  ▶");
+		putsxy(40, 21, "◀  bigger  ▶");
 	}
 	else if (modeselect == 2) {
-		putsxy(32, 21, "◀ puyopuyo ▶");
+		putsxy(40, 21, "◀ puyopuyo ▶");
 	}
 	else {
-		putsxy(32, 21, "◀  simple  ▶");
+		putsxy(40, 21, "◀  simple  ▶");
 	}
-	putsxy(32, 25, "▶  easy");
-	putsxy(32, 26, "    normal");
-	putsxy(32, 28, "    hard");
+	putsxy(40, 25, "▶  easy");
+	putsxy(40, 27, "    normal");
+	putsxy(40, 29, "    hard");
 	int arrowPosition = 0;
 	for (; 1;) {
 		if (kbhit()) {
 			int ch = getch();
 			if (ch == 0xE0 || ch == 0) {
 				ch = getch();
-				putsxy(32, 25 + arrowPosition, "  ");
+				putsxy(40, 25 + arrowPosition, "  ");
 				switch (ch) {
 				case UP:
 					arrowPosition -= 2;
@@ -632,15 +632,15 @@ void chooseDifficulty() {
 					break;
 				}
 				if (modeselect == 1) {
-					putsxy(32, 21, "◀  bigger  ▶");
+					putsxy(40, 21, "◀  bigger  ▶");
 				}
 				else if (modeselect == 2) {
-					putsxy(32, 21, "◀ puyopuyo ▶");
+					putsxy(40, 21, "◀ puyopuyo ▶");
 				}
 				else {
-					putsxy(32, 21, "◀  simple  ▶");
+					putsxy(40, 21, "◀  simple  ▶");
 				}
-				putsxy(32, 24 + arrowPosition, "▶");
+				putsxy(40, 24 + arrowPosition, "▶");
 			}
 			else {
 				switch (ch) {
