@@ -578,22 +578,33 @@ void chooseDifficulty() {
 	//난이도를 선택하기 위한 함수
 	clrscr();
 	modeselect = 0;
-	putsxy(5, 5, " □■■□■         ■□■□         ■□■□■       ■■□■        ■         ■■□■");
-	putsxy(5, 6, "     □             ■                   ■           □                         ■");
-	putsxy(5, 7, "     ■             ■■□■             □           ■■■□        ■         □■■□") 
-	putsxy(5, 8, "     ■             ■                   ■           ■              □               ■")
-	putsxy(5, 9, "     □             □□■□             □           □■□■        ■         □■□■")
 	putsxy(32, 16, "게임 모드와 난이도를 선택해 주세요.");
 	putsxy(23, 18, "←→:모드 변경, ↑↓:난이도 변경, ENTER: 난이도 선택");
 	if (modeselect == 1) {
 		putsxy(40, 21, "◀  bigger  ▶");
+		putsxy(5, 5, " □■■□■         ■□■□         ■□■□■       ■■□■        ■         ■■□■");
+		putsxy(5, 6, "     □             ■                   ■           □              □         ■       ");
+		putsxy(5, 7, "     ■             ■■□■             □           ■■■□        ■         □■■□ ");
+		putsxy(5, 8, "     ■             ■                   ■           ■              □               ■ ");
+		putsxy(5, 9, "     □             □□■□             □           □■□■        ■         □■□■ ");
 	}
 	else if (modeselect == 2) {
+		putsxy(5, 5, "■■■    ■      ■  ■      ■    ■■■    ■■■    ■      ■  ■      ■    ■■■  ");
+		putsxy(5, 6, "■    ■  ■      ■    ■  ■    ■      ■  ■    ■  ■      ■    ■  ■    ■      ■");
+		putsxy(5, 7, "■■■    ■      ■      ■      ■      ■  ■■■    ■      ■      ■      ■      ■");
+		putsxy(5, 8, "■        ■      ■      ■      ■      ■  ■        ■      ■      ■      ■      ■");
+		putsxy(5, 9, "■          ■■■        ■        ■■■    ■          ■■■        ■        ■■■  ");
 		putsxy(40, 21, "◀ puyopuyo ▶");
 	}
 	else {
 		putsxy(40, 21, "◀  simple  ▶");
+		putsxy(5, 5, " □■■□■         ■□■□         ■□■□■       ■■□■        ■         ■■□■");
+		putsxy(5, 6, "     □             ■                   ■           □              □         ■       ");
+		putsxy(5, 7, "     ■             ■■□■             □           ■■■□        ■         □■■□ ");
+		putsxy(5, 8, "     ■             ■                   ■           ■              □               ■ ");
+		putsxy(5, 9, "     □             □□■□             □           □■□■        ■         □■□■ ");
 	}
+
 	putsxy(40, 25, "▶  easy");
 	putsxy(40, 27, "    normal");
 	putsxy(40, 29, "    hard");
@@ -633,14 +644,29 @@ void chooseDifficulty() {
 				}
 				if (modeselect == 1) {
 					putsxy(40, 21, "◀  bigger  ▶");
+					putsxy(5, 5, " □■■□■         ■□■□         ■□■□■       ■■□■        ■         ■■□■");
+					putsxy(5, 6, "     □             ■                   ■           □              □         ■       ");
+					putsxy(5, 7, "     ■             ■■□■             □           ■■■□        ■         □■■□ ");
+					putsxy(5, 8, "     ■             ■                   ■           ■              □               ■ ");
+					putsxy(5, 9, "     □             □□■□             □           □■□■        ■         □■□■ ");
 				}
 				else if (modeselect == 2) {
 					putsxy(40, 21, "◀ puyopuyo ▶");
+					putsxy(5, 5, "■■■    ■      ■  ■      ■    ■■■    ■■■    ■      ■  ■      ■    ■■■  ");
+					putsxy(5, 6, "■    ■  ■      ■    ■  ■    ■      ■  ■    ■  ■      ■    ■  ■    ■      ■");
+					putsxy(5, 7, "■■■    ■      ■      ■      ■      ■  ■■■    ■      ■      ■      ■      ■");
+					putsxy(5, 8, "■        ■      ■      ■      ■      ■  ■        ■      ■      ■      ■      ■");
+					putsxy(5, 9, "■          ■■■        ■        ■■■    ■          ■■■        ■        ■■■  ");
 				}
 				else {
 					putsxy(40, 21, "◀  simple  ▶");
+					putsxy(5, 5, " □■■□■         ■□■□         ■□■□■       ■■□■        ■         ■■□■");
+					putsxy(5, 6, "     □             ■                   ■           □              □         ■       ");
+					putsxy(5, 7, "     ■             ■■□■             □           ■■■□        ■         □■■□ ");
+					putsxy(5, 8, "     ■             ■                   ■           ■              □               ■ ");
+					putsxy(5, 9, "     □             □□■□             □           □■□■        ■         □■□■ ");
 				}
-				putsxy(40, 24 + arrowPosition, "▶");
+				putsxy(40, 25 + arrowPosition, "▶");
 			}
 			else {
 				switch (ch) {
@@ -754,10 +780,10 @@ void puyoDrop() {
 	BOOL wholeEmpty = FALSE;
 	int x = 1;
 	int y;
-	int line =BH;
-	do {	
+	int line = BH;
+	do {
 		for (y = BH; y > 1; y--) {
-			if (board[x][y] == EMPTY&&board[x][y-1]!=EMPTY) {
+			if (board[x][y] == EMPTY && board[x][y - 1] != EMPTY) {
 				board[x][y] = board[x][y - 1];
 				board[x][y - 1] = EMPTY;
 			}
@@ -824,14 +850,14 @@ BOOL MoveDownPuyo()
 		}
 		puyocnt++;
 		do {
- 			puyoDrop();
+			puyoDrop();
 			isChain = CheckLinkPuyo();
 			if (line >= 5) {
 				plusDelay(difficulty);
 				line = 0;
 			}
 		} while (isChain);
-		if (puyocnt>= (9 - difficulty)*2) {
+		if (puyocnt >= (9 - difficulty) * 2) {
 			plusPuyoLine(difficulty);
 			puyocnt = 0;
 		}
@@ -847,13 +873,13 @@ BOOL MoveDownPuyo()
 
 BOOL CheckLinkPuyo() {
 	//뿌요뿌요 블럭이 연결되어 있는지 체크하고 4개이상 연결된 뿌요뿌요 블럭을 지우는 함수
-	memset(checked, 0, sizeof(int) * ((BW+2) * (BH+2)));
+	memset(checked, 0, sizeof(int) * ((BW + 2) * (BH + 2)));
 	int count = 0;
 	int puyocount = 1;
 	BOOL isLink = FALSE;
 	for (int y = 1; y < BH + 1; y++) {
 		for (int x = 1; x < BW + 1; x++) {
-			if (checked[x][y] == 0 && board[x][y]!=EMPTY && board[x][y] != PUYO_W) {
+			if (checked[x][y] == 0 && board[x][y] != EMPTY && board[x][y] != PUYO_W) {
 				if (checked[x + 1][y] != 0 && board[x][y] == board[x + 1][y]) {
 					checked[x][y] = checked[x + 1][y];
 				}
@@ -946,12 +972,12 @@ void DrawPuyoScreen()
 	}
 	char buffer[3];
 	_itoa_s(gameDelay, buffer, 3, 10);
-	//putsxy(55, 3, "PuyoPuyo ver 1.0");
-	//putsxy(55, 5, "좌우:이동, 위:회전, 아래:내림");
-	//putsxy(55, 7, "스페이스 바:전부 내림");
-	//putsxy(55, 9, "gameDelay : ");
-	//putsxy(67, 9, buffer);
-	//putsxy(29, 2, "n e x t");
+	putsxy(55, 3, "PuyoPuyo ver 1.0");
+	putsxy(55, 5, "좌우:이동, 위:회전, 아래:내림");
+	putsxy(55, 7, "스페이스 바:전부 내림");
+	putsxy(55, 9, "gameDelay : ");
+	putsxy(67, 9, buffer);
+	putsxy(29, 2, "n e x t");
 	PrintNextPuyo();
 }
 
@@ -1112,5 +1138,5 @@ void plusPuyoLine(int lineAmount) {
 		}
 		puyoDrop();
 	}
-	
+
 }
