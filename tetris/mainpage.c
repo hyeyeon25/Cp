@@ -25,7 +25,7 @@ enum { ESC = 27, LEFT = 75, RIGHT = 77, UP = 72, DOWN = 80 };
 #define BW 10
 #define BH 20
 #define BOFFSET 2
-
+ 
 void DrawScreen();
 BOOL ProcessKey();
 void bigBrickShape(int brick, int rot);
@@ -640,7 +640,7 @@ void chooseDifficulty() {
 				else {
 					putsxy(40, 21, "¢¸  simple  ¢º");
 				}
-				putsxy(40, 24 + arrowPosition, "¢º");
+				putsxy(40, 25 + arrowPosition, "¢º");
 			}
 			else {
 				switch (ch) {
